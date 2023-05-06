@@ -42,7 +42,7 @@ public class ListeTache {
     }
 
     // Afficher la liste des tâches
-    public void displayTasks() {
+    public String displayTasks() {
         if (tasks.isEmpty()) {
             System.out.println("Aucune tâche à afficher.");
         } else {
@@ -51,6 +51,7 @@ public class ListeTache {
                 System.out.println(task.getId() + ". " + task.getDescription() + " - " + status);
             }
         }
+        return null;
     }
 
     // Retourner la liste des tâches
